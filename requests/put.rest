@@ -1,0 +1,9 @@
+PUT http://localhost:3001/api/items/66c1be5a020b4b3c5e944378
+Content-Type: application/json
+
+{
+    "title": "MODIFICATION of the fourth test",
+    "content": "this is YET ANOTHER test (updated put test)",
+    "due": "some day possible",
+    "importance": 0
+}

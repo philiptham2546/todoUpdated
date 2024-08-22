@@ -1,0 +1,9 @@
+POST http://localhost:3001/api/items
+Content-Type: application/json
+
+{
+    "title": "this is the FOURTH test",
+    "content": "this is YET ANOTHER test",
+    "due": "never",
+    "importance": 3000
+}
