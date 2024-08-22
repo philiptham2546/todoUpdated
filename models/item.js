@@ -3,13 +3,14 @@ require('dotenv').config()
 const mongoose = require('mongoose')
 mongoose.set('strictQuery',false)
 
+/*
 if (process.argv.length <3){
     console.log("Error: expected node [file] [password]")
     process.exit(-1)
-}
+}*/
 
-const password = process.argv[2]
-const url = `mongodb+srv://ht2546:${password}@cluster0.rfoap.mongodb.net/todoApp?retryWrites=true&w=majority&appName=Cluster0`
+//const password = process.argv[2]
+const url = process.env.MONGODB_URI
 
 console.log("Connecting to", url)
 mongoose.connect(url).then(result => {
